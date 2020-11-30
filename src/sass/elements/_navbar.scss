@@ -9,7 +9,7 @@
 header{
     justify-content: space-between;
     display: flex;
-    align-items: center !important;
+    align-items: center;
     width: 100%;
     padding: 60px 50px;
     position: relative;
@@ -19,9 +19,7 @@ header{
     }
 }
 nav{
-    align-items: center !important;
     display: flex;
-    text-align: center !important;
 }
 ul{
     list-style: none;
@@ -49,19 +47,28 @@ li{
     color: #111111;
     display: flex;
     align-items: center;
+    &:hover{
+        .ball{
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        background-color: #000;
+        border-radius: 50%;
+        }
+    }
 }
 
 .header-title h1{
-    font-size: 32px;
+    font-size: 32px !important;
     margin-bottom: 30px;
     @include mq('tablet', max)
             {
                 font-size: 20px;
             }
     @include mq('phone', min){
-        font-size: 18px;
+        font-weight: 500;
+        font-size: 17px;
     }
-
 }
 .header-title p{
     margin-bottom: 50px;
@@ -69,19 +76,25 @@ li{
         font-size: 14px;
     }
 }
-.btn {
+.btn{
     padding:0px 50px;
     color: #ffffff !important;
+    font-size: 18px;
+    font-weight: 600;
     border-radius: 30px;
     height: 70px;
-    background-color: #000000;
+    position: relative;
+    background-color:black;
+    
     @include mq('tablet', max){
         padding: 0px 35px;
         height: 55px;
+        font-size: 17px;
     }
     @include mq('phone', max){
-        padding: 0px 30px;
-        height: 45px;
+        padding: 0px 15px;
+        height: 35px;
+        font-size: 13px;
     }
     
 }
@@ -166,7 +179,6 @@ section {
     .row{
         width: 100%;
         display: flex;
-        align-items: center;
         margin-top: 70px;
         margin-bottom: 60px;
     }
@@ -174,7 +186,15 @@ section {
         background-color: #ffffff;
         text-align: center;
         margin-bottom: 30px;
+        transition: 0.3s ease;
+            
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
+                z-index: 1;
+            }
         @include mq('phone', max)
+
         {
             display: block;
             justify-content: center;
@@ -416,7 +436,8 @@ menu{
             margin-top: 25px;
             @include mq('phone', max){
                 font-size: 16px;
-                text-align: left;
+                text-align: center;
+                margin-left:0;
             }
         }
         .method-item{
@@ -426,7 +447,7 @@ menu{
             left: 0;
             z-index: 1;
             background-color: #ffffff;
-            transition: 0.2s ease-in-out;
+            transition: 0.8s ease-in-out;
             opacity: 0;
             p{
                 color: #7d7d7d;
@@ -518,6 +539,7 @@ menu{
             }
             img{
                 margin-bottom: 24px;
+                width: 100%;
                 @include mq('tablet', max){
                     margin-left: auto;
                     margin-right: auto;
@@ -563,6 +585,14 @@ menu{
                     width: 100%;
                     @include mq('tablet', max){
                         height: 550px;
+                    }
+                }
+                img:last-child{
+                    @include mq('phone', max){
+                        height: 100px;
+                    }
+                    @include mq('tablet', max){
+                        height: 200px;
                     }
                 }
             }
@@ -636,6 +666,13 @@ menu{
             box-shadow: 0px 4px 22.75px 12.25px rgba(0, 0, 0, 0.03);
             padding: 35px 30px;
             margin-bottom: 25px;
+            transition: 0.3s ease;
+            
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
+                z-index: 1;
+            }
             @include mq('tablet', max){
             }
             
@@ -658,7 +695,6 @@ menu{
                 font-size: 16px;
                 font-weight: 400;
                 margin-bottom: 40px;
-
                 @include textClamp(4, 240px)
             }
             a{
@@ -935,6 +971,15 @@ menu{
         }
     }
   }
-
+  .ball {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    background-color: black;
+  }
 
 // --------------------------Mobile---------------------------//

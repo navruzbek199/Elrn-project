@@ -18,10 +18,12 @@
 <link rel="stylesheet" href="libs/animate.css-main/animate.min.css">
 <link rel="stylesheet" href="libs/touch-sideswipe-master/dist/touch-sideswipe.min.css">
 <link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
 	</head>
 	<body>
 		<!-- Header -->
-		
 			<header>
 					<div class="logo">
 						<img src="../img/Logo.png" alt="#">
@@ -39,6 +41,7 @@
 					</nav>
 			</header>
 			<div class="hamburger-menu">
+				<div class="ball"></div>
 				<div class="container">
 					<div class="row d-flex">
 						<div class="col-md-3">
@@ -68,12 +71,12 @@
 							<div class="card-body d-block">
 								<nav>
 								<ul>
-									<li><a href="#">Варианты поставки</a></li>
-									<li><a href="#">Форматы разработки</a></li>
-									<li><a href="#">Тематика</a></li>
-									<li><a href="#">Методические приемы</a></li>
-									<li><a href="#">Технологии разработки</a></li>
-									<li><a href="#">Преимущества</a></li>	
+									<li><a href="#section1">Варианты поставки</a></li>
+									<li><a href="#section2">Форматы разработки</a></li>
+									<li><a href="#section3">Тематика</a></li>
+									<li><a href="#section4">Методические приемы</a></li>
+									<li><a href="#section5">Технологии разработки</a></li>
+									<li><a href="#section6">Преимущества</a></li>	
 								</ul>
 								</nav>
 							</div>
@@ -84,12 +87,12 @@
 							<div class="card-body">
 								<nav>
 								<ul>
-									<li><a href="#">Наши проекты</a></li>
-									<li><a href="#">Анимация и видеоролики</a></li>
-									<li><a href="#">Процесс разработки</a></li>
-									<li><a href="#">Цены</a></li>
-									<li><a href="#">Наши клиенты</a></li>
-									<li><a href="#">Отзывы</a></li>	
+									<li><a href="#section7">Наши проекты</a></li>
+									<li><a href="#section8">Анимация и видеоролики</a></li>
+									<li><a href="#section9">Процесс разработки</a></li>
+									<li><a href="#section10">Цены</a></li>
+									<li><a href="#section11">Наши клиенты</a></li>
+									<li><a href="#section12">Отзывы</a></li>	
 								</ul>
 								</nav>
 							</div>
@@ -101,19 +104,21 @@
 					</div>
 				</div>
 			</div>
-			<div class="container">
+			
+			<div class="container ">
 			<div class="header-body">
 				<div class="header-title">
-				<h1>Разработка электронных курсов <br>
+				<h1 class="animated wow fadeInDown" data-wow-delay="1s">Разработка электронных курсов <br>
 					для обучения персонала </h1>
-					<p>Закажите комплект из трех электронных курсов и получите третий курс со скидкой 30%</p>
+					<p class="animated wow fadeInUp" data-wow-offset="150" data-wow-delay="1s">Закажите комплект из трех электронных курсов и получите третий курс со скидкой 30%</p>
 				<button class="btn">Заказать курс</button>	
 				</div>
 			</div>
 			</div>
+			
 			<div class="container">
-			<div class="header-footer">
-				<h2>Варианты поставки   <span>электронных курсов</span></h2>
+			<div class="header-footer" id="section1">
+				<h2 name="section1">Варианты поставки   <span>электронных курсов</span></h2>
 				<div class="box">
 					<img src="../img/comp4.png" alt="">
 					<div class="box-title">
@@ -122,7 +127,7 @@
 						Курс полностью реализуем с нуля под ваши индивидуальные пожелания.</p>
 					</div>
 				</div>
-				<div class="box">
+				<div class="box ">
 					<img src="../img/comp5.png" alt="">
 					<div class="box-title">
 					<h4>Готовые решения (коробочные курсы)</h4>
@@ -145,7 +150,7 @@
 
 
 		<section>
-			<div class="container">
+			<div class="container" id="section2">
 				<h1>Форматы разработки электронных курсов</h1>
 				<div class="row">
 					<div class="col-md-4 col-sm-6">
@@ -190,8 +195,8 @@
 				</div>
 			</div>
 		</section>
-		<menu>
-			<div class="container">
+	<menu>
+			<div class="container" id="section3">
 				<h1>Тематика электронных курсов</h1>
 				<div class="accordion-option">
 					<a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
@@ -262,7 +267,7 @@
 					</div>
 				  </div>
 			</div>
-			<div class="container mt-3">
+			<div class="container mt-3" id="section4">
 				<h1>Методические приемы в электронных курсах</h1>
 				<div class="row">
 					<div class="col-md-6">
@@ -345,7 +350,7 @@
 			</div>
 			<section class="techno">
 				<div class="container">
-					<h1>Технологии разработки</h1>
+					<h1 id="section5">Технологии разработки</h1>
 					<div class="row">
 						<div class="col-md-6">
 							<div class="item-box">
@@ -375,7 +380,7 @@
 							</div>
 						</div>
 					</div>
-					<h1>Преимущества наших курсов</h1>
+					<h1 id="section6">Преимущества наших курсов</h1>
 					<div class="row">
 						<div class="col-md-3">
 							<img src="../img/icon21.png" alt="">
@@ -398,9 +403,9 @@
 					</div>
 				</div>
 			</section>
-			<section class="favored">
+			<section class="favored wow animated fadeInUp" data-wow-offset="150">
 				<div class="container">
-					<h1 class="">Избранные проекты</h1>
+					<h1 id="section7">Избранные проекты</h1>
 					<div class="row">
 						<div class="col-md-6">
 							<div class="favored-title">
@@ -418,12 +423,12 @@
 						</div>
 						<div class="col-md-6">
 							<div class="view-case">
-								<img src="../img/icon25.png" alt="">
-								<img class="view-img" src="../img/icon26.png" alt="">
+								<img class="animated wow slideInRight" data-wow-delay="1s" src="../img/icon25.png" alt="">
+								<img class="view-img animated wow slideInRight" data-wow-delay="1s" src="../img/icon26.png" alt="">
 							</div>
 						</div>
 					</div>
-					<h1 style="text-align: center;">Обучающие анимации и видеоролики</h1>
+					<h1 style="text-align: center;" id="section8">Обучающие анимации и видеоролики</h1>
 					<div class="row">
 						<div class="col-md-6">
 							<div class="photo-about">
@@ -446,12 +451,12 @@
 			</section>
 			<section class="proses">
 				<div class="container">
-					<h1>Процесс разработки электронных курсов
+					<h1 id="section9">Процесс разработки электронных курсов
 					</h1>
 					<div class="row">
 						<div class="col-md-6 col-sm-12 mb-4"> 
-							<div class="number-p">
-								<img src="../img/icon33.png" alt="">
+							<div class="number-p ">
+								<img class="" src="../img/icon33.png" alt="">
 								<p>Получаем ваш запрос, <br>
 									проводим анализ, изучаем <br>
 									имеющиеся материалы</p>
@@ -504,7 +509,7 @@
 			</section>
 			<section class="cost">
 				<div class="container">
-					<h1>Стоимость электронных курсов</h1>
+					<h1 id="section10">Стоимость электронных курсов</h1>
 					<div class="row">
 						<div class="col-md-4">
 							<div class="about">
@@ -584,7 +589,7 @@
 					<h1>Чтобы рассчитать стоимость решения вашей задачи,
 						позвоните нам или оставьте заявку.</h1>
 					<button class="btn mb-5 d-block mx-auto">Заказать электронный курс</button>
-					<h1>Нам доверяют</h1>
+					<h1 id="section11">Нам доверяют</h1>
 					<div class="row">
 						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 							<img src="../img/profildors1.png" alt="">
@@ -662,7 +667,7 @@
 					</div>
 					<div class="carusels">
 						<div class="caruser-title text-center">
-							<h1>Отзывы</h1>
+							<h1 id="section12">Отзывы</h1>
 						</div>
 						<div class="swiper-container mb-5">
 							<div class="swiper-wrapper">
@@ -793,6 +798,10 @@
 <script defer="" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script defer="" src="libs/touch-sideswipe-master/dist/touch-sideswipe.min.js"></script>
 <script defer="" src="libs/WOW-master/dist/wow.min.js"></script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 <!-- GSAP -->
 <script defer="" src="libs/gsap-public/minified/gsap.min.js"></script>
 <!-- <script defer src="libs/gsap-public/minified/ScrollTrigger.min.js"></script> -->
