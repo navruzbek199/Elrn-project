@@ -18,8 +18,14 @@
 <link rel="stylesheet" href="libs/animate.css-main/animate.min.css">
 <link rel="stylesheet" href="libs/touch-sideswipe-master/dist/touch-sideswipe.min.css">
 <link rel="stylesheet" href="css/main.min.css">
+<<<<<<< HEAD
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+=======
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
+
 	</head>
 	<body>
 		<!-- Header -->
@@ -40,6 +46,7 @@
 					</nav>
 			</header>
 			<div class="hamburger-menu">
+				<div class="ball"></div>
 				<div class="container">
 					<div class="row d-flex">
 						<div class="col-md-3">
@@ -102,16 +109,23 @@
 					</div>
 				</div>
 			</div>
-			<div class="container">
+			
+			<div class="container ">
 			<div class="header-body">
 				<div class="header-title">
-				<h1>Разработка электронных курсов <br>
+				<h1 class="animated wow fadeInDown" data-wow-delay="1s">Разработка электронных курсов <br>
 					для обучения персонала </h1>
+<<<<<<< HEAD
 					<p>Закажите комплект из трех электронных курсов и получите третий курс со скидкой 30%</p>
 				<button href="#btn" class="btn">Заказать курс</button>	
+=======
+					<p class="animated wow fadeInUp" data-wow-offset="150" data-wow-delay="1s">Закажите комплект из трех электронных курсов и получите третий курс со скидкой 30%</p>
+				<button class="btn">Заказать курс</button>	
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 				</div>
 			</div>
 			</div>
+			
 			<div class="container">
 			<div class="header-footer" id="section1">
 				<h2 name="section1">Варианты поставки   <span>электронных курсов</span></h2>
@@ -123,7 +137,7 @@
 						Курс полностью реализуем с нуля под ваши индивидуальные пожелания.</p>
 					</div>
 				</div>
-				<div class="box">
+				<div class="box ">
 					<img src="../img/comp5.png" alt="">
 					<div class="box-title">
 					<h4>Готовые решения (коробочные курсы)</h4>
@@ -428,7 +442,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="favored">
+			<section class="favored wow animated fadeInUp" data-wow-offset="150">
 				<div class="container">
 					<h1 id="section7">Избранные проекты</h1>
 					<div class="row">
@@ -448,8 +462,8 @@
 						</div>
 						<div class="col-md-6">
 							<div class="view-case">
-								<img src="../img/icon25.png" alt="">
-								<img class="view-img" src="../img/icon26.png" alt="">
+								<img class="animated wow slideInRight" data-wow-delay="1s" src="../img/icon25.png" alt="">
+								<img class="view-img animated wow slideInRight" data-wow-delay="1s" src="../img/icon26.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -480,8 +494,8 @@
 					</h1>
 					<div class="row">
 						<div class="col-md-6 col-sm-12 mb-4"> 
-							<div class="number-p">
-								<img src="../img/icon33.png" alt="">
+							<div class="number-p ">
+								<img class="" src="../img/icon33.png" alt="">
 								<p>Получаем ваш запрос, <br>
 									проводим анализ, изучаем <br>
 									имеющиеся материалы</p>
@@ -613,7 +627,11 @@
 					</div>
 					<h1>Чтобы рассчитать стоимость решения вашей задачи,
 						позвоните нам или оставьте заявку.</h1>
+<<<<<<< HEAD
 					<button href="#btn" class="btn mb-5 d-block mx-auto">Заказать электронный курс</button>
+=======
+					<button class="btn mb-5 d-block mx-auto">Заказать электронный курс</button>
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 					<h1 id="section11">Нам доверяют</h1>
 					<div class="row">
 						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -826,6 +844,10 @@
 <script defer="" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script defer="" src="libs/touch-sideswipe-master/dist/touch-sideswipe.min.js"></script>
 <script defer="" src="libs/WOW-master/dist/wow.min.js"></script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 <!-- GSAP -->
 <script defer="" src="libs/gsap-public/minified/gsap.min.js"></script>
 <!-- <script defer src="libs/gsap-public/minified/ScrollTrigger.min.js"></script> -->

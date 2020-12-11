@@ -55,9 +55,19 @@ li{
     color: #111111;
     display: flex;
     align-items: center;
+    &:hover{
+        .ball{
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        background-color: #000;
+        border-radius: 50%;
+        }
+    }
 }
 
 .header-title h1{
+<<<<<<< HEAD
     margin-bottom: 30px;
     
     @include mq('tablet-wide', max){
@@ -76,6 +86,18 @@ li{
     //     font-size: 17px;
     // }
 
+=======
+    font-size: 32px !important;
+    margin-bottom: 30px;
+    @include mq('tablet', max)
+            {
+                font-size: 20px;
+            }
+    @include mq('phone', min){
+        font-weight: 500;
+        font-size: 17px;
+    }
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 }
 .header-title p{
     margin-bottom: 50px;
@@ -84,6 +106,7 @@ li{
         font-size: 15px;
     }
 }
+<<<<<<< HEAD
 .btn {
     padding: 0 35px;
     color: #fff!important;
@@ -91,11 +114,27 @@ li{
     height: 68px;
     background-color: #000;
     @include mq('tablet-wide', max){
+=======
+.btn{
+    padding:0px 50px;
+    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    height: 70px;
+    position: relative;
+    background-color:black;
+    
+    @include mq('tablet', max){
+        padding: 0px 35px;
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
         height: 55px;
+        font-size: 17px;
     }
     @include mq('phone', max){
-        padding: 0px 30px;
-        height: 45px;
+        padding: 0px 15px;
+        height: 35px;
+        font-size: 13px;
     }
     
 }
@@ -199,6 +238,7 @@ section {
         background-color: #ffffff;
         text-align: center;
         margin-bottom: 30px;
+<<<<<<< HEAD
         &:hover{
             
             transform: scale(1.05);
@@ -208,6 +248,17 @@ section {
             border: none;
         }
         @include mq('phone-wide', max)
+=======
+        transition: 0.3s ease;
+            
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
+                z-index: 1;
+            }
+        @include mq('phone', max)
+
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
         {
             margin-bottom: 24px;
             display: block;
@@ -484,8 +535,13 @@ menu{
             margin-top: 10px;
             @include mq('tablet-wide', max){
                 font-size: 16px;
+<<<<<<< HEAD
                 text-align: left;
                 margin-left:24px;
+=======
+                text-align: center;
+                margin-left:0;
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
             }
             @include mq('tablet-small', max){
                 font-size: 16px;
@@ -510,7 +566,7 @@ menu{
             left: 0;
             z-index: 1;
             background-color: #ffffff;
-            transition: 0.2s ease-in-out;
+            transition: 0.8s ease-in-out;
             opacity: 0;
             
             p{
@@ -627,7 +683,11 @@ menu{
             }
             img{
                 margin-bottom: 24px;
+<<<<<<< HEAD
                 width: 80%;
+=======
+                width: 100%;
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
                 @include mq('tablet', max){
                     margin-left: auto;
                     margin-right: auto;
@@ -697,6 +757,14 @@ menu{
                 img:last-child{
                     @include mq('phone', max){
                         height: 100px;
+                    }
+                }
+                img:last-child{
+                    @include mq('phone', max){
+                        height: 100px;
+                    }
+                    @include mq('tablet', max){
+                        height: 200px;
                     }
                 }
             }
@@ -810,8 +878,19 @@ menu{
             box-shadow: 0px 4px 22.75px 12.25px rgba(0, 0, 0, 0.03);
             padding: 35px 30px;
             margin-bottom: 25px;
+<<<<<<< HEAD
             @include mq('tablet-wide', max){
                 padding: 5px 15px;
+=======
+            transition: 0.3s ease;
+            
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
+                z-index: 1;
+            }
+            @include mq('tablet', max){
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
             }
             
             
@@ -833,7 +912,6 @@ menu{
                 font-size: 16px;
                 font-weight: 400;
                 margin-bottom: 40px;
-
                 @include textClamp(4, 240px)
             }
             a{
@@ -1138,6 +1216,7 @@ menu{
         }
     }
   }
+<<<<<<< HEAD
   #toptag{
       padding: 15px;
       background: #4786ff;
@@ -1158,5 +1237,17 @@ menu{
       }
   }
 
+=======
+  .ball {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    background-color: black;
+  }
+>>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 
 // --------------------------Mobile---------------------------//
