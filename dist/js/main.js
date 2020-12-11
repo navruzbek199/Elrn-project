@@ -3,7 +3,10 @@ $('#nav-icon1').click(function(){
     $(this).toggleClass('open');
     $('.hamburger-menu').toggleClass("active");
 });
-
+$('.hamburger-menu li').on('click', function(){
+  $('.hamburger-menu').removeClass('active')
+  $('#nav-icon1').removeClass('open')
+});
 
 
 
@@ -41,3 +44,36 @@ var swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
   });
+ 
+
+var toptag = document.getElementById('toptag');
+window.onscroll=function() { funcScroll() };
+
+function funcScroll(){
+  if (document.body.scrollTop>100 || document.documentElement.scrollTop>100)
+   {
+    toptag.style.display="block";
+  }
+  else{
+    toptag.style.display="none";
+  }
+}
+
+function gototop(){
+  document.body.scrollTop=0;
+  document.documentElement.scrollTop=0;
+}
+var toptag=$('#toptag');
+$(window).scroll(function(){
+  if($(window).scrollTop()>30)
+{
+  toptag.css("display","block");
+}
+else{
+  toptag.css("display","none");
+}
+});
+toptag.on('click',function(e){
+  e.preventDefoult();
+  $('html,body').animate({scrollTop:0},'300');
+});

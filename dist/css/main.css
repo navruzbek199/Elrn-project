@@ -341,18 +341,25 @@ template {
 header {
   justify-content: space-between;
   display: flex;
-  align-items: center !important;
+  align-items: center;
   width: 100%;
-  padding: 60px 50px;
+  padding: 45px 50px;
   position: relative; }
+  @media only screen and (max-width: 1023px) {
+    header {
+      padding: 45px; } }
+  @media only screen and (max-width: 767px) {
+    header {
+      padding: 30px 15px; } }
+  @media only screen and (max-width: 639px) {
+    header {
+      padding: 30px 15px; } }
   @media only screen and (max-width: 399px) {
     header {
-      padding: 30px 50px; } }
+      padding: 30px 15px; } }
 
 nav {
-  align-items: center !important;
-  display: flex;
-  text-align: center !important; }
+  display: flex; }
 
 ul {
   list-style: none;
@@ -367,7 +374,7 @@ li:nth-child(1) {
 
 li:nth-child(2) {
   margin-right: 25px; }
-  @media only screen and (max-width: 399px) {
+  @media only screen and (max-width: 767px) {
     li:nth-child(2) {
       display: none; } }
 
@@ -379,30 +386,29 @@ li {
   align-items: center; }
 
 .header-title h1 {
-  font-size: 32px;
   margin-bottom: 30px; }
+  @media only screen and (max-width: 1023px) {
+    .header-title h1 {
+      font-size: 27px; } }
   @media only screen and (max-width: 767px) {
     .header-title h1 {
-      font-size: 20px; } }
-  @media only screen and (min-width: 400px) {
-    .header-title h1 {
-      font-size: 18px; } }
+      font-size: 24px; } }
 
 .header-title p {
-  margin-bottom: 50px; }
-  @media only screen and (max-width: 399px) {
+  margin-bottom: 50px;
+  font-size: 16px; }
+  @media only screen and (max-width: 767px) {
     .header-title p {
-      font-size: 14px; } }
+      font-size: 15px; } }
 
 .btn {
-  padding: 0px 50px;
-  color: #ffffff !important;
-  border-radius: 30px;
-  height: 70px;
-  background-color: #000000; }
-  @media only screen and (max-width: 767px) {
+  padding: 0 35px;
+  color: #fff !important;
+  border-radius: 65px;
+  height: 68px;
+  background-color: #000; }
+  @media only screen and (max-width: 1023px) {
     .btn {
-      padding: 0px 35px;
       height: 55px; } }
   @media only screen and (max-width: 399px) {
     .btn {
@@ -412,6 +418,7 @@ li {
 .header-footer {
   margin-top: 110px; }
   .header-footer span {
+    font-family: 'Londrina Outline', cursive;
     color: transparent;
     -webkit-text-stroke: 1px #000;
     margin-left: 1rem; }
@@ -426,10 +433,14 @@ li {
     margin-bottom: 80px; }
     @media only screen and (max-width: 767px) {
       .header-footer h2 {
-        font-size: 24px; } }
+        font-size: 24px;
+        text-align: center; } }
     @media only screen and (max-width: 399px) {
       .header-footer h2 {
         font-size: 20px; } }
+    @media only screen and (max-width: 639px) {
+      .header-footer h2 {
+        font-size: 23px; } }
 
 .box {
   display: flex;
@@ -462,39 +473,53 @@ section {
   background-color: #f6f9ff; }
   section h1 {
     text-align: center;
-    padding-top: 100px; }
+    padding-top: 45px; }
+    @media only screen and (max-width: 1023px) {
+      section h1 {
+        font-size: 28px; } }
     @media only screen and (max-width: 767px) {
       section h1 {
-        font-size: 24px; } }
-    @media only screen and (max-width: 399px) {
+        font-size: 25px; } }
+    @media only screen and (max-width: 639px) {
       section h1 {
-        font-size: 20px; } }
+        font-size: 23px; } }
   section .row {
     width: 100%;
     display: flex;
-    align-items: center;
     margin-top: 70px;
     margin-bottom: 60px; }
   section .card {
     background-color: #ffffff;
     text-align: center;
     margin-bottom: 30px; }
-    @media only screen and (max-width: 399px) {
+    section .card:hover {
+      transform: scale(1.05);
+      transition: 1.1s;
+      box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
+      z-index: 1;
+      border: none; }
+    @media only screen and (max-width: 479px) {
       section .card {
+        margin-bottom: 24px;
         display: block;
         justify-content: center; } }
     section .card img {
       margin-bottom: 40px !important;
-      width: 50%;
+      width: 40%;
       margin: 0 auto;
       margin-top: 50px; }
       @media only screen and (max-width: 767px) {
         section .card img {
-          width: 25%; } }
+          width: 25%;
+          margin-top: 30px; } }
     section .card p {
       font-size: 17px;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 60px; }
+      @media only screen and (max-width: 767px) {
+        section .card p {
+          font-size: 16px;
+          margin-bottom: 20px; } }
 
 /* Icon 1 */
 #nav-icon1 {
@@ -565,18 +590,26 @@ section {
     .hamburger-menu .row .col-md-3 {
       margin: 0;
       padding: 0; }
+      @media only screen and (max-width: 767px) {
+        .hamburger-menu .row .col-md-3 {
+          width: 50%;
+          order: 1; } }
     .hamburger-menu .row .col-md-5 {
       padding: 0;
       margin: 0; }
       @media only screen and (max-width: 767px) {
         .hamburger-menu .row .col-md-5 {
-          width: 50%; } }
+          width: 100%;
+          order: 2;
+          margin-top: -20px; } }
     .hamburger-menu .row .col-md-4 {
       padding: 0;
       margin: 0; }
       @media only screen and (max-width: 767px) {
         .hamburger-menu .row .col-md-4 {
-          width: 50%; } }
+          width: 50%;
+          order: 3;
+          margin-top: -90px; } }
   .hamburger-menu p {
     margin: 0;
     padding: 0;
@@ -593,6 +626,11 @@ section {
     .hamburger-menu ul li {
       margin: 0;
       padding: 0; }
+      .hamburger-menu ul li a {
+        margin-bottom: 18px; }
+        @media only screen and (max-width: 767px) {
+          .hamburger-menu ul li a {
+            font-size: 20px; } }
   .hamburger-menu .card-body {
     padding: 0; }
   .hamburger-menu .card-body:last-child {
@@ -603,11 +641,19 @@ menu {
   padding: 0; }
   menu h1 {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 30px; }
+    @media only screen and (max-width: 1023px) {
+      menu h1 {
+        font-size: 28px; } }
     @media only screen and (max-width: 767px) {
       menu h1 {
-        font-size: 24px; } }
+        font-size: 25px; } }
+    @media only screen and (max-width: 559px) {
+      menu h1 {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
     @media only screen and (max-width: 399px) {
       menu h1 {
         font-size: 20px; } }
@@ -644,7 +690,16 @@ menu {
       menu .methods {
         display: block; } }
     menu .methods:hover .method-item {
-      opacity: 1; }
+      opacity: 1;
+      overflow-y: scroll;
+      max-height: 120px;
+      float: right; }
+      @media only screen and (max-width: 639px) {
+        menu .methods:hover .method-item {
+          max-height: 170px; } }
+      @media only screen and (max-width: 767px) {
+        menu .methods:hover .method-item {
+          max-height: 120px; } }
     @media only screen and (max-width: 399px) {
       menu .methods img {
         display: block;
@@ -655,11 +710,26 @@ menu {
       font-weight: 700;
       color: #111111;
       margin-left: 30px;
-      margin-top: 25px; }
-      @media only screen and (max-width: 399px) {
+      margin-top: 10px; }
+      @media only screen and (max-width: 1023px) {
         menu .methods p {
           font-size: 16px;
-          text-align: left; } }
+          text-align: left;
+          margin-left: 24px; } }
+      @media only screen and (max-width: 639px) {
+        menu .methods p {
+          font-size: 16px;
+          text-align: center;
+          margin-left: 0px; } }
+      @media only screen and (max-width: 767px) {
+        menu .methods p {
+          font-size: 16px;
+          text-align: left;
+          margin-left: 15px; } }
+      @media only screen and (max-width: 559px) {
+        menu .methods p {
+          margin-left: 0px;
+          text-align: center; } }
     menu .methods .method-item {
       color: #7d7d7d;
       position: absolute;
@@ -681,11 +751,26 @@ menu {
     border: 1px solid #d1d4d9;
     background-color: #f6f9ff;
     min-height: 313px;
-    transition: 0.3s ease; }
+    transition: 0.3s ease;
+    max-width: 49%;
+    margin-left: 9px; }
+    @media only screen and (max-width: 1023px) {
+      menu section.techno .col-md-6 {
+        margin: 0 auto; } }
+    @media only screen and (max-width: 767px) {
+      menu section.techno .col-md-6 {
+        display: inline-table;
+        margin-bottom: 10px; } }
+    @media only screen and (max-width: 639px) {
+      menu section.techno .col-md-6 {
+        margin-left: 0px;
+        max-width: 100%;
+        width: 100%; } }
     menu section.techno .col-md-6:hover {
       transform: scale(1.05);
       box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
-      z-index: 1; }
+      z-index: 1;
+      border: none; }
   menu section.techno .item-box {
     padding: 15px; }
   menu section.techno .item-top {
@@ -710,6 +795,10 @@ menu {
         display: block;
         margin: 0 auto;
         justify-content: center; } }
+    @media only screen and (max-width: 767px) {
+      menu section.techno .item-top img {
+        -o-object-fit: contain;
+           object-fit: contain; } }
   menu section.techno .item-body p {
     color: #7d7fa9;
     font-size: 13px;
@@ -725,17 +814,23 @@ menu {
         margin-left: auto;
         margin-right: auto;
         width: 50%; } }
-    @media only screen and (max-width: 399px) {
+    @media only screen and (max-width: 639px) {
       menu section.techno .col-md-3 {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        width: 100%; } }
+        width: 50%; } }
+    @media only screen and (max-width: 399px) {
+      menu section.techno .col-md-3 {
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto; } }
     menu section.techno .col-md-3 p {
       text-align: center;
       color: #7d7fa9; }
     menu section.techno .col-md-3 img {
-      margin-bottom: 24px; }
+      margin-bottom: 24px;
+      width: 80%; }
       @media only screen and (max-width: 767px) {
         menu section.techno .col-md-3 img {
           margin-left: auto;
@@ -744,6 +839,9 @@ menu {
       @media only screen and (max-width: 399px) {
         menu section.techno .col-md-3 img {
           width: 50%; } }
+      @media only screen and (max-width: 639px) {
+        menu section.techno .col-md-3 img {
+          width: 80%; } }
   menu section.favored {
     background-color: #ffffff; }
     menu section.favored h1 {
@@ -751,11 +849,24 @@ menu {
     menu section.favored .col-md-6 {
       border: none; }
       menu section.favored .col-md-6 .favored-title p {
-        font-weight: 600; }
+        font-weight: 400;
+        padding-top: 300px; }
+        @media only screen and (max-width: 1023px) {
+          menu section.favored .col-md-6 .favored-title p {
+            font-size: 16px;
+            padding-top: 160px; } }
+        @media only screen and (max-width: 767px) {
+          menu section.favored .col-md-6 .favored-title p {
+            font-size: 16px;
+            padding-top: 0px; } }
+        @media only screen and (max-width: 559px) {
+          menu section.favored .col-md-6 .favored-title p {
+            font-size: 16px;
+            margin-top: -40px; } }
       menu section.favored .col-md-6 .favored-text p {
         font-size: 20px;
-        font-weight: 600; }
-        @media only screen and (max-width: 767px) {
+        font-weight: 500; }
+        @media only screen and (max-width: 1023px) {
           menu section.favored .col-md-6 .favored-text p {
             font-size: 16px; } }
       menu section.favored .col-md-6 .favored-about p {
@@ -770,6 +881,12 @@ menu {
           @media only screen and (max-width: 767px) {
             menu section.favored .col-md-6 .view-case img {
               height: 550px; } }
+          @media only screen and (max-width: 559px) {
+            menu section.favored .col-md-6 .view-case img {
+              height: 475px; } }
+        @media only screen and (max-width: 399px) {
+          menu section.favored .col-md-6 .view-case img:last-child {
+            height: 100px; } }
       menu section.favored .col-md-6 img.view-img {
         width: 130px;
         opacity: 0;
@@ -779,17 +896,47 @@ menu {
         z-index: 1;
         transition: 0.2s ease;
         transform: translate(-50%, -50%); }
-      @media only screen and (max-width: 767px) {
-        menu section.favored .col-md-6 .photo-about p {
-          text-align: center; } }
-      @media only screen and (max-width: 399px) {
+        @media only screen and (max-width: 767px) {
+          menu section.favored .col-md-6 img.view-img {
+            height: 100px;
+            width: 100px; } }
+      menu section.favored .col-md-6 .photo-about p {
+        margin-top: 15px; }
+        @media only screen and (max-width: 767px) {
+          menu section.favored .col-md-6 .photo-about p {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #7d7fa9; } }
+        menu section.favored .col-md-6 .photo-about p span {
+          color: #000;
+          font-weight: 700; }
+      @media only screen and (max-width: 1023px) {
         menu section.favored .col-md-6 .photo-about img {
           text-align: center;
-          width: 100%;
+          width: 170px;
           display: block;
           justify-content: center;
           margin-left: auto;
           margin-right: auto; } }
+      menu section.favored .col-md-6 .photo-aboutx p {
+        margin-top: 15px; }
+        menu section.favored .col-md-6 .photo-aboutx p span {
+          color: #000;
+          font-weight: 700; }
+        @media only screen and (max-width: 767px) {
+          menu section.favored .col-md-6 .photo-aboutx p {
+            text-align: center; } }
+      @media only screen and (max-width: 1023px) {
+        menu section.favored .col-md-6 .photo-aboutx img {
+          text-align: center;
+          width: 200px;
+          display: block;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto; } }
+      @media only screen and (max-width: 767px) {
+        menu section.favored .col-md-6 .photo-aboutx img {
+          padding-top: 15px; } }
   menu section.proses p {
     color: #7d7fa9;
     margin-left: 20px; }
@@ -805,11 +952,13 @@ menu {
         justify-content: center;
         margin-left: auto;
         margin-right: auto; } }
-    @media only screen and (max-width: 399px) {
+    @media only screen and (max-width: 1023px) {
       menu section.proses .col-md-6 .number-p img {
         display: block;
         margin-left: auto;
-        margin-right: auto; } }
+        margin-right: auto;
+        -o-object-fit: contain;
+           object-fit: contain; } }
   menu section.cost {
     background-color: #ffffff; }
     menu section.cost .row {
@@ -823,6 +972,9 @@ menu {
       box-shadow: 0px 4px 22.75px 12.25px rgba(0, 0, 0, 0.03);
       padding: 35px 30px;
       margin-bottom: 25px; }
+      @media only screen and (max-width: 1023px) {
+        menu section.cost .about {
+          padding: 5px 15px; } }
       menu section.cost .about div {
         display: flex;
         flex-direction: column; }
@@ -882,17 +1034,28 @@ menu {
           font-size: 13px; } }
     menu section.cost .carusels .swiper-title {
       display: flex; }
-      @media only screen and (max-width: 399px) {
+      @media only screen and (max-width: 767px) {
         menu section.cost .carusels .swiper-title {
           display: block;
           margin-left: auto;
-          margin-right: auto; } }
+          margin-right: auto;
+          text-align: center;
+          margin-bottom: 10px; } }
       @media only screen and (max-width: 399px) {
         menu section.cost .carusels .swiper-title img {
           display: block;
           margin-left: auto;
           margin-right: auto;
           margin-bottom: 12px; } }
+      menu section.cost .carusels .swiper-title .text {
+        text-align: left;
+        margin-left: 12px; }
+        @media only screen and (max-width: 767px) {
+          menu section.cost .carusels .swiper-title .text {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center; } }
     menu section.cost .carusels .swiper-body p {
       font-size: 16px;
       font-weight: 400; }
@@ -905,7 +1068,8 @@ menu {
           text-align: center; } }
     @media only screen and (max-width: 767px) {
       menu section.cost .carusels img {
-        width: 70px; } }
+        width: 70px;
+        margin-bottom: 15px; } }
     @media only screen and (max-width: 399px) {
       menu section.cost .carusels img {
         width: 50px;
@@ -930,13 +1094,23 @@ menu {
       align-items: center; }
       menu section.order .row form input {
         max-width: 100%;
-        width: 700px;
+        width: 500px;
         border: 0;
         border-bottom: 1px solid #7d7fa9;
         color: #7d7fa9;
         background-color: #f6f9ff;
         margin-bottom: 30px;
-        outline: 0 !important; }
+        outline: 0 !important;
+        padding-bottom: 10px; }
+        menu section.order .row form input::-moz-placeholder {
+          color: #7d7fa9;
+          opacity: 1; }
+        menu section.order .row form input:-ms-input-placeholder {
+          color: #7d7fa9;
+          opacity: 1; }
+        menu section.order .row form input::placeholder {
+          color: #7d7fa9;
+          opacity: 1; }
 
 .panel-default > .panel-heading {
   color: #333;
@@ -954,16 +1128,16 @@ menu {
 
 .panel-default > .panel-heading a {
   display: block;
-  padding: 10px 15px; }
+  padding: 20px 20px; }
 
 .panel-default > .panel-heading a:after {
   content: "";
   position: relative;
-  top: 1px;
+  top: 5px;
   display: inline-block;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -972,7 +1146,14 @@ menu {
   -webkit-transition: -webkit-transform .25s linear; }
 
 .panel-default > .panel-heading a[aria-expanded="true"] {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-size: 22px; }
+  @media only screen and (max-width: 399px) {
+    .panel-default > .panel-heading a[aria-expanded="true"] {
+      font-size: 16px; } }
+  @media only screen and (max-width: 559px) {
+    .panel-default > .panel-heading a[aria-expanded="true"] {
+      font-size: 17px; } }
 
 .panel-default > .panel-heading a[aria-expanded="true"]:after {
   content: "\2212";
@@ -980,11 +1161,18 @@ menu {
 
 @media only screen and (max-width: 399px) {
   h4.panel-title {
-    font-size: 1rem; } }
+    font-size: 15px; } }
 
 .panel-default > .panel-heading a[aria-expanded="false"]:after {
   content: "\002b";
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+  font-size: 22px; }
+  @media only screen and (max-width: 399px) {
+    .panel-default > .panel-heading a[aria-expanded="false"]:after {
+      font-size: 16px; } }
+  @media only screen and (max-width: 559px) {
+    .panel-default > .panel-heading a[aria-expanded="false"]:after {
+      font-size: 17px; } }
 
 .accordion-option {
   width: 100%;
@@ -1007,11 +1195,8 @@ menu {
 footer {
   background-color: #000000; }
   footer .col-md-6 {
-    padding-top: 35px;
-    padding-bottom: 60px; }
-    @media only screen and (max-width: 399px) {
-      footer .col-md-6 {
-        padding-bottom: 15px; } }
+    padding-top: 45px;
+    padding-bottom: 35px; }
     footer .col-md-6 a {
       font-size: 20px;
       font-weight: 600;
@@ -1024,15 +1209,15 @@ footer {
     footer .col-md-6 p:last-child {
       margin-top: 40px; }
   footer .col-md-3 {
-    padding-top: 35px;
+    padding-top: 45px;
     display: flex;
     flex-direction: column; }
     @media only screen and (max-width: 767px) {
       footer .col-md-3 {
         display: flex;
-        width: 270px;
-        justify-content: space-between;
-        padding-bottom: 0; } }
+        padding-bottom: 0;
+        width: 50%;
+        padding-top: 0px; } }
     footer .col-md-3 a {
       font-size: 20px;
       font-weight: 600;
@@ -1044,6 +1229,24 @@ footer {
       @media only screen and (max-width: 399px) {
         footer .col-md-3 a {
           font-size: 17px; } }
+
+#toptag {
+  padding: 15px;
+  background: #4786ff;
+  color: white;
+  border-radius: 4px;
+  float: right;
+  bottom: 20px;
+  right: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  border: 2px solid #0f75ce;
+  display: none;
+  transition: 2s; }
+  #toptag:hover {
+    background-color: white;
+    color: #0f75ce;
+    transition: 2s; }
 
 .swiper-container {
   width: 100%;
