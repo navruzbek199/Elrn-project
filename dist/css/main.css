@@ -330,6 +330,31 @@ template {
 ::-webkit-scrollbar-thumb {
   background: #000; }
 
+#accordion .card-link {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  font-size: 21px; }
+  @media only screen and (max-width: 559px) {
+    #accordion .card-link {
+      font-size: 16px;
+      font-weight: 500; } }
+  #accordion .card-link::after {
+    content: '\f077';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 300;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-size: 18px;
+    transition: content .2s ease;
+    transform: translateY(-50%);
+    cursor: pointer; }
+  #accordion .card-link.collapsed::after {
+    content: '\f078'; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -392,22 +417,13 @@ li {
     border-radius: 50%; }
 
 .header-title h1 {
-<<<<<<< HEAD
-=======
-  font-size: 32px !important;
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
   margin-bottom: 30px; }
   @media only screen and (max-width: 1023px) {
     .header-title h1 {
       font-size: 27px; } }
   @media only screen and (max-width: 767px) {
     .header-title h1 {
-<<<<<<< HEAD
       font-size: 24px; } }
-=======
-      font-weight: 500;
-      font-size: 17px; } }
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 
 .header-title p {
   margin-bottom: 50px;
@@ -417,7 +433,6 @@ li {
       font-size: 15px; } }
 
 .btn {
-<<<<<<< HEAD
   padding: 0 35px;
   color: #fff !important;
   border-radius: 65px;
@@ -425,22 +440,8 @@ li {
   background-color: #000; }
   @media only screen and (max-width: 1023px) {
     .btn {
-      height: 55px; } }
-=======
-  padding: 0px 50px;
-  color: #ffffff !important;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 30px;
-  height: 70px;
-  position: relative;
-  background-color: black; }
-  @media only screen and (max-width: 767px) {
-    .btn {
-      padding: 0px 35px;
       height: 55px;
       font-size: 17px; } }
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
   @media only screen and (max-width: 399px) {
     .btn {
       padding: 0px 15px;
@@ -523,8 +524,8 @@ section {
   section .card {
     background-color: #ffffff;
     text-align: center;
-<<<<<<< HEAD
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    max-height: 236.19px; }
     section .card:hover {
       transform: scale(1.05);
       transition: 1.1s;
@@ -532,15 +533,6 @@ section {
       z-index: 1;
       border: none; }
     @media only screen and (max-width: 479px) {
-=======
-    margin-bottom: 30px;
-    transition: 0.3s ease; }
-    section .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
-      z-index: 1; }
-    @media only screen and (max-width: 399px) {
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
       section .card {
         margin-bottom: 24px;
         display: block;
@@ -549,7 +541,7 @@ section {
       margin-bottom: 40px !important;
       width: 40%;
       margin: 0 auto;
-      margin-top: 50px; }
+      margin-top: 30px; }
       @media only screen and (max-width: 767px) {
         section .card img {
           width: 25%;
@@ -742,6 +734,9 @@ menu {
       @media only screen and (max-width: 767px) {
         menu .methods:hover .method-item {
           max-height: 120px; } }
+      @media only screen and (max-width: 399px) {
+        menu .methods:hover .method-item {
+          max-height: 165px; } }
     @media only screen and (max-width: 399px) {
       menu .methods img {
         display: block;
@@ -756,7 +751,6 @@ menu {
       @media only screen and (max-width: 1023px) {
         menu .methods p {
           font-size: 16px;
-<<<<<<< HEAD
           text-align: left;
           margin-left: 24px; } }
       @media only screen and (max-width: 639px) {
@@ -771,12 +765,12 @@ menu {
           margin-left: 15px; } }
       @media only screen and (max-width: 559px) {
         menu .methods p {
-          margin-left: 0px;
-          text-align: center; } }
-=======
+          text-align: left;
+          margin-left: 27px; } }
+      @media only screen and (max-width: 399px) {
+        menu .methods p {
           text-align: center;
-          margin-left: 0; } }
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
+          margin-left: 0px; } }
     menu .methods .method-item {
       color: #7d7d7d;
       position: absolute;
@@ -877,11 +871,7 @@ menu {
       color: #7d7fa9; }
     menu section.techno .col-md-3 img {
       margin-bottom: 24px;
-<<<<<<< HEAD
       width: 80%; }
-=======
-      width: 100%; }
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
       @media only screen and (max-width: 767px) {
         menu section.techno .col-md-3 img {
           margin-left: auto;
@@ -932,21 +922,18 @@ menu {
           @media only screen and (max-width: 767px) {
             menu section.favored .col-md-6 .view-case img {
               height: 550px; } }
-<<<<<<< HEAD
           @media only screen and (max-width: 559px) {
             menu section.favored .col-md-6 .view-case img {
               height: 475px; } }
         @media only screen and (max-width: 399px) {
           menu section.favored .col-md-6 .view-case img:last-child {
             height: 100px; } }
-=======
         @media only screen and (max-width: 399px) {
           menu section.favored .col-md-6 .view-case img:last-child {
             height: 100px; } }
         @media only screen and (max-width: 767px) {
           menu section.favored .col-md-6 .view-case img:last-child {
             height: 200px; } }
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
       menu section.favored .col-md-6 img.view-img {
         width: 130px;
         opacity: 0;
@@ -1031,19 +1018,10 @@ menu {
       background-color: white;
       box-shadow: 0px 4px 22.75px 12.25px rgba(0, 0, 0, 0.03);
       padding: 35px 30px;
-<<<<<<< HEAD
       margin-bottom: 25px; }
       @media only screen and (max-width: 1023px) {
         menu section.cost .about {
           padding: 5px 15px; } }
-=======
-      margin-bottom: 25px;
-      transition: 0.3s ease; }
-      menu section.cost .about:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
-        z-index: 1; }
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
       menu section.cost .about div {
         display: flex;
         flex-direction: column; }
@@ -1181,6 +1159,11 @@ menu {
           color: #7d7fa9;
           opacity: 1; }
 
+.card-header {
+  background-color: #fff;
+  border-left: 5px solid #4786ff;
+  border-radius: 5px; }
+
 .panel-default > .panel-heading {
   color: #333;
   background-color: #fff;
@@ -1203,7 +1186,6 @@ menu {
   content: "";
   position: relative;
   top: 5px;
-  display: inline-block;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
   font-weight: 700;
@@ -1299,7 +1281,6 @@ footer {
         footer .col-md-3 a {
           font-size: 17px; } }
 
-<<<<<<< HEAD
 #toptag {
   padding: 15px;
   background: #4786ff;
@@ -1317,17 +1298,6 @@ footer {
     background-color: white;
     color: #0f75ce;
     transition: 2s; }
-=======
-.ball {
-  width: 10px;
-  height: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border: 3px solid #000000;
-  border-radius: 50%;
-  background-color: black; }
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 
 .swiper-container {
   width: 100%;

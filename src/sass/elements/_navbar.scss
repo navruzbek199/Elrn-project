@@ -67,7 +67,6 @@ li{
 }
 
 .header-title h1{
-<<<<<<< HEAD
     margin-bottom: 30px;
     
     @include mq('tablet-wide', max){
@@ -86,18 +85,6 @@ li{
     //     font-size: 17px;
     // }
 
-=======
-    font-size: 32px !important;
-    margin-bottom: 30px;
-    @include mq('tablet', max)
-            {
-                font-size: 20px;
-            }
-    @include mq('phone', min){
-        font-weight: 500;
-        font-size: 17px;
-    }
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 }
 .header-title p{
     margin-bottom: 50px;
@@ -106,7 +93,6 @@ li{
         font-size: 15px;
     }
 }
-<<<<<<< HEAD
 .btn {
     padding: 0 35px;
     color: #fff!important;
@@ -114,20 +100,6 @@ li{
     height: 68px;
     background-color: #000;
     @include mq('tablet-wide', max){
-=======
-.btn{
-    padding:0px 50px;
-    color: #ffffff !important;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 30px;
-    height: 70px;
-    position: relative;
-    background-color:black;
-    
-    @include mq('tablet', max){
-        padding: 0px 35px;
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
         height: 55px;
         font-size: 17px;
     }
@@ -225,8 +197,6 @@ section {
         @include mq('tablet-small', max){
             font-size: 23px;
         }
-        
-        
     }
     .row{
         width: 100%;
@@ -238,7 +208,7 @@ section {
         background-color: #ffffff;
         text-align: center;
         margin-bottom: 30px;
-<<<<<<< HEAD
+        max-height: 236.19px;
         &:hover{
             
             transform: scale(1.05);
@@ -248,17 +218,6 @@ section {
             border: none;
         }
         @include mq('phone-wide', max)
-=======
-        transition: 0.3s ease;
-            
-            &:hover{
-                transform: scale(1.05);
-                box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
-                z-index: 1;
-            }
-        @include mq('phone', max)
-
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
         {
             margin-bottom: 24px;
             display: block;
@@ -272,7 +231,7 @@ section {
             margin-bottom: 40px !important;
             width: 40%;
             margin: 0 auto;
-            margin-top: 50px
+            margin-top: 30px
         }
         p{
             font-size: 17px;
@@ -285,8 +244,6 @@ section {
             
         }
     }  
-    
-
 }
 
 /* Icon 1 */
@@ -519,6 +476,10 @@ menu{
             @include mq('tablet', max){
                 max-height: 120px;
             }
+            @include mq('phone', max){
+                max-height: 165px;
+            }
+
         }
         img{
             @include mq('phone', max){
@@ -535,13 +496,8 @@ menu{
             margin-top: 10px;
             @include mq('tablet-wide', max){
                 font-size: 16px;
-<<<<<<< HEAD
                 text-align: left;
                 margin-left:24px;
-=======
-                text-align: center;
-                margin-left:0;
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
             }
             @include mq('tablet-small', max){
                 font-size: 16px;
@@ -554,8 +510,12 @@ menu{
                 margin-left:15px;
             }
             @include mq('phablet', max){
-                margin-left: 0px;
+                text-align: left;
+                margin-left: 27px;
+            }
+            @include mq('phone', max){
                 text-align: center;
+                margin-left: 0px;
             }
             
         }
@@ -683,11 +643,7 @@ menu{
             }
             img{
                 margin-bottom: 24px;
-<<<<<<< HEAD
                 width: 80%;
-=======
-                width: 100%;
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
                 @include mq('tablet', max){
                     margin-left: auto;
                     margin-right: auto;
@@ -878,19 +834,8 @@ menu{
             box-shadow: 0px 4px 22.75px 12.25px rgba(0, 0, 0, 0.03);
             padding: 35px 30px;
             margin-bottom: 25px;
-<<<<<<< HEAD
             @include mq('tablet-wide', max){
                 padding: 5px 15px;
-=======
-            transition: 0.3s ease;
-            
-            &:hover{
-                transform: scale(1.05);
-                box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.04);
-                z-index: 1;
-            }
-            @include mq('tablet', max){
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
             }
             
             
@@ -1066,7 +1011,11 @@ menu{
         }
     }
 }
-
+.card-header{
+    background-color: #fff;
+    border-left: 5px solid #4786ff;
+    border-radius: 5px;
+}
 .panel-default>.panel-heading {
     color: #333;
     background-color: #fff;
@@ -1080,7 +1029,6 @@ menu{
     user-select: none;
     margin-bottom: 15px;
     box-shadow: 0px 8px 18.75px 6.25px rgba(0, 0, 0, 0.03);
-
   }
   
   .panel-default>.panel-heading a {
@@ -1092,7 +1040,6 @@ menu{
     content: "";
     position: relative;
     top: 5px;
-    display: inline-block;
     font-family: 'Glyphicons Halflings';
     font-style: normal;
     font-weight: 700;
@@ -1216,7 +1163,6 @@ menu{
         }
     }
   }
-<<<<<<< HEAD
   #toptag{
       padding: 15px;
       background: #4786ff;
@@ -1237,17 +1183,5 @@ menu{
       }
   }
 
-=======
-  .ball {
-    width: 10px;
-    height: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border: 3px solid #000000;
-    border-radius: 50%;
-    background-color: black;
-  }
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 
 // --------------------------Mobile---------------------------//

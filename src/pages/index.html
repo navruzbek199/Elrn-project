@@ -92,13 +92,8 @@
 				<div class="header-title">
 				<h1 class="animated wow fadeInDown" data-wow-delay="1s" >Разработка электронных курсов <br>
 					для обучения персонала </h1>
-<<<<<<< HEAD
 					<p>Закажите комплект из трех электронных курсов и получите третий курс со скидкой 30%</p>
 				<button href="#btn" class="btn">Заказать курс</button>	
-=======
-					<p class="animated wow fadeInUp" data-wow-offset="150" data-wow-delay="1s">Закажите комплект из трех электронных курсов и получите третий курс со скидкой 30%</p>
-				<button class="btn">Заказать курс</button>	
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 				</div>
 			</div>
 			</div>
@@ -185,74 +180,59 @@
 	<menu>
 			<div class="container" id="section3">
 				<h1>Тематика электронных курсов</h1>
-				<div class="accordion-option">
-					<a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
-				  </div>
-				  <div class="clearfix"></div>
-				  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					<div class="panel panel-default">
-					  <div class="panel-heading" role="tab" id="headingOne">
-						<h4 class="panel-title">
-						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				<div id="accordion">
+					<div class="card">
+					  <div class="card-header">
+						<a class="card-link" data-toggle="collapse" href="#collapseOne">
 							Продуктовые курсы
 						</a>
-					  </h4>
 					  </div>
-					  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-						<div class="panel-body mb-4">
+					  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+						<div class="card-body">
 							В таких курсах систематизированы знания о различных процессах компании: согласование документов, поиск поставщиков,
 							добыча и обработка сырья, производство и контроль качества продукции и другие
 						</div>
 					  </div>
 					</div>
-					<div class="panel panel-default">
-					  <div class="panel-heading" role="tab" id="headingTwo">
-						<h4 class="panel-title">
-						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+					<div class="card">
+					  <div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
 							Курсы о процессах
-						</a>
-					  </h4>
+					  </a>
 					  </div>
-					  <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-						<div class="panel-body mb-4">
+					  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+						<div class="card-body">
 							В таких курсах систематизированы знания о различных процессах компании: согласование документов, поиск поставщиков,
-							добыча и обработка сырья, производство и контроль качества продукции и другие
-						</div>
+							добыча и обработка сырья, производство и контроль качества продукции и другие						</div>
 					  </div>
 					</div>
-					<div class="panel panel-default">
-					  <div class="panel-heading" role="tab" id="headingThree">
-						<h4 class="panel-title">
-						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+					<div class="card">
+					  <div class="card-header">
+						<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
 							Адаптационные курсы
 						</a>
-					  </h4>
 					  </div>
-					  <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-						<div class="panel-body mb-4">
+					  <div id="collapseThree" class="collapse" data-parent="#accordion">
+						<div class="card-body">
 							В таких курсах систематизированы знания о различных процессах компании: согласование документов, поиск поставщиков,
-							добыча и обработка сырья, производство и контроль качества продукции и другие
-						</div>
+							добыча и обработка сырья, производство и контроль качества продукции и другие							</div>
 					  </div>
 					  
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingFour">
-						  <h4 class="panel-title">
-						  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+					<div class="card">
+						<div class="card-header">
+						  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
 							Курсы о навыках
 						  </a>
-						</h4>
 						</div>
-						<div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
-						  <div class="panel-body mb-4">
+						<div id="collapseFour" class="collapse" data-parent="#accordion">
+						  <div class="card-body">
 							  В таких курсах систематизированы знания о различных процессах компании: согласование документов, поиск поставщиков,
-							  добыча и обработка сырья, производство и контроль качества продукции и другие
-						  </div>
+							  добыча и обработка сырья, производство и контроль качества продукции и другие							</div>
 						</div>
-						
-					</div>
+					  </div>
 				  </div>
+				</div>	
 			</div>
 			<div class="container mt-3" id="section4">
 				<h1>Методические приемы в электронных курсах</h1>
@@ -604,11 +584,7 @@
 					</div>
 					<h1>Чтобы рассчитать стоимость решения вашей задачи,
 						позвоните нам или оставьте заявку.</h1>
-<<<<<<< HEAD
 					<button href="#btn"  class="btn mb-5 d-block mx-auto">Заказать электронный курс</button>
-=======
-					<button class="btn mb-5 d-block mx-auto">Заказать электронный курс</button>
->>>>>>> b75061b836035e4e75bf6d3c00fcf5aa360492de
 					<h1 id="section11" >Нам доверяют</h1>
 					<div class="row">
 						<div class="col-lg-2 col-md-3 col-sm-4 col-6">

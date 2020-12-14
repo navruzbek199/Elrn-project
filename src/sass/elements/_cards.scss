@@ -1,0 +1,32 @@
+#accordion {
+    .card-link {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        font-weight: 600;
+        font-size: 21px;
+        @include mq('phablet', max){
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &::after {
+            content: '\f077';
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 300;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            font-size: 18px;
+            transition: content .2s ease;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        &.collapsed {
+            &::after {
+                content: '\f078';
+            }
+        }
+    }
+}
